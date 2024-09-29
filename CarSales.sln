@@ -5,13 +5,18 @@ VisualStudioVersion = 17.9.34607.119
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AuctionService", "Src\AuctionService\AuctionService.csproj", "{357FA5C6-E50B-4811-B134-AA8299A0EE19}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SearchService", "SearchService\SearchService.csproj", "{328D37E6-2592-48DF-B2A5-7B647B275AC6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SearchService", "Src\SearchService\SearchService.csproj", "{328D37E6-2592-48DF-B2A5-7B647B275AC6}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Contracts", "Contracts\Contracts.csproj", "{A3AC0E24-A2A7-477C-8FE9-F80BB2B97B96}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Contracts", "Src\Contracts\Contracts.csproj", "{A3AC0E24-A2A7-477C-8FE9-F80BB2B97B96}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IdentityService", "IdentityService\IdentityService.csproj", "{E802BAAA-005C-4180-82FB-2996FE692566}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IdentityService", "Src\IdentityService\IdentityService.csproj", "{E802BAAA-005C-4180-82FB-2996FE692566}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GatewayService", "GatewayService\GatewayService.csproj", "{51AEA71F-5313-411D-A4A4-E8EC28B131A4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GatewayService", "Src\GatewayService\GatewayService.csproj", "{51AEA71F-5313-411D-A4A4-E8EC28B131A4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{A2CB6E60-4C4C-48B0-9936-59FB3F23E541}"
+	ProjectSection(SolutionItems) = preProject
+		docker-compose.yml = docker-compose.yml
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

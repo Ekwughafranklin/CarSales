@@ -23,10 +23,9 @@ COPY Src/IdentityService/IdentityService.csproj Src/IdentityService/IdentityServ
 RUN dotnet restore CarSales.sln
 
 ##copy app folder over
-COPY Src/AuctionService Src/AuctionService
-COPY Src/Contracts Src/Contracts
+COPY Src/GatewayService Src/GatewayService
 
-WORKDIR /app/Src/AuctionService
+WORKDIR /app/Src/GatewayService
 RUN dotnet publish -c Release -o /app/src/out
 
 ##uild runtime image
@@ -34,4 +33,4 @@ RUN dotnet publish -c Release -o /app/src/out
 FROM mcr.microsoft.com/dotnet/aspnet:8.0
 WORKDIR /app
 COPY --from=build /app/src/out .
-ENTRYPOINT ["dotnet", "AuctionService.dll"]
+ENTRYPOINT ["dotnet", "GatewayService.dll"]
